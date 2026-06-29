@@ -57,7 +57,7 @@ UPDATE_PACKAGE() {
 # UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"
 # UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 # UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
-UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
+# UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
 # UPDATE_PACKAGE "netspeedtest" "sirpdboy/luci-app-netspeedtest" "js" "" "homebox speedtest"
 # UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"
 # UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base qt6tools rblibtorrent"
@@ -126,7 +126,7 @@ UPDATE_VERSION() {
 # sed -i 's/+xray-core//' luci-app-passwall2/Makefile
 
 # #删除官方的默认插件
-rm -rf ../feeds/luci/applications/luci-app-{dockerman,dae*,bypass*}
+rm -rf ../feeds/luci/applications/luci-app-{mosdns,dockerman,dae*,bypass*}
 rm -rf ../feeds/packages/net/{dae*}
 #rm -rf ../feeds/packages/net/{v2ray-geodata,dae*}
 
